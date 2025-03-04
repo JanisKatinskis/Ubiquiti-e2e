@@ -2,8 +2,8 @@ import { $ } from '@wdio/globals'
 import Page from './page.js';
 
 class CartPage extends Page {
-    public get cartProductTitle () { return $('#cart_contents_container [data-test="inventory-item-name"]') }
-    
+    public get cartProductList () { return $('[data-test="cart-list"]') }
+    public get btnCheckout () { return $('#checkout') }
 }
 
 export default new CartPage();
