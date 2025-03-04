@@ -20,7 +20,7 @@ describe('Product purchase', () => {
         await expect(productsPage.lastProductTitle).toBeDisplayed()
         await expect(productsPage.btnAddToCartLastProduct).toBeClickable()
 
-        const firstProductName = productsPage.lastProductTitle.getText();
+        const firstProductName = (await productsPage.lastProductTitle.getText()).toString();
         await productsPage.btnAddToCartLastProduct.click();
         await expect(productsPage.badgeShoppingCartProductCount).toBeDisplayed()
         await expect(productsPage.badgeShoppingCartProductCount).toHaveText("1")
@@ -30,7 +30,7 @@ describe('Product purchase', () => {
         await expect(productsPage.topRightProductTitle).toBeDisplayed()
         await expect(productsPage.btnAddToCartTopRightProduct).toBeClickable()
 
-        const secondProductName = productsPage.topRightProductTitle.getText();
+        const secondProductName = (await productsPage.topRightProductTitle.getText()).toString();
         await productsPage.btnAddToCartTopRightProduct.click();
         await expect(productsPage.badgeShoppingCartProductCount).toHaveText("2")
 
@@ -38,6 +38,12 @@ describe('Product purchase', () => {
         await productsPage.btnShoppingCart.click();
 
         await expect(cartPage.cartProductTitle).toBeDisplayed()
+        //const cartItems = $$('#cart_contents_container [data-test="inventory-item-name"]')
+        const cartItems = $$(cartPage.cartProductTitle)
+        await expect(cartItems.length).toBe(2)
+        //await expect(cartPage.cartProductTitle).toBeDisplayed()
+        // await expect(cartPage.cartProductTitle).toHaveText(firstProductName)
+        // await expect(cartPage.cartProductTitle).toContain(secondProductName)
 
     })
 })
