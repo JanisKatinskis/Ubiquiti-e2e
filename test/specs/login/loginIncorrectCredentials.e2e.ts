@@ -8,14 +8,12 @@ describe('Login incorrect credentials', () => {
         
         await browser.url(process.env.URL!)
         await loginPage.loginForm.waitForDisplayed()
-        await expect(loginPage.inputUsername).toBeDisplayed()
-        await expect(loginPage.inputPassword).toBeDisplayed()
-        await expect(loginPage.btnLogin).toBeClickable()
         await expect(loginPage.errorMessage).not.toBeDisplayed()
 
         await loginPage.login('badusername', password)
         await expect(loginPage.errorMessage).toBeDisplayed()
         await expect(loginPage.errorMessage).toHaveText('Epic sadface: Username and password do not match any user in this service')
+     
         await browser.refresh()
         await loginPage.login(username, 'badpassword')
         await expect(loginPage.errorMessage).toBeDisplayed()

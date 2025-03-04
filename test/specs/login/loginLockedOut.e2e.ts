@@ -8,9 +8,6 @@ describe('Login locked out', () => {
         
         await browser.url(process.env.URL!)
         await loginPage.loginForm.waitForDisplayed()
-        await expect(loginPage.inputUsername).toBeDisplayed()
-        await expect(loginPage.inputPassword).toBeDisplayed()
-        await expect(loginPage.btnLogin).toBeClickable()
         await expect(loginPage.errorMessage).not.toBeDisplayed()
 
         await loginPage.login(username, password)

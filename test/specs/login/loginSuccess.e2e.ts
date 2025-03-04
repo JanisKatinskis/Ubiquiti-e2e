@@ -14,7 +14,6 @@ describe('Login success', () => {
         await expect(loginPage.btnLogin).toBeClickable()
 
         await loginPage.login(username, password)
-
         await expect(productsPage.productsPageContent).toBeDisplayed()
     })
 })
