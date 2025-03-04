@@ -15,11 +15,10 @@ This is an end-to-end (E2E) testing project for the Ubiquiti application using W
 
 Before setting up the project, make sure you have the following installed:
 
-- **Node.js** (LTS version recommended) – [Download Node.js](https://nodejs.org/)
-- **npm** (comes with Node.js)
-- **Git** – [Download Git](https://git-scm.com/)
+- **Node.js** 
+- **npm**
+- **Git**
 
-For running tests in a browser (if you need a UI-based test execution), ensure you have a browser installed (e.g., Chrome, Firefox).
 
 ---
 
@@ -29,6 +28,11 @@ For running tests in a browser (if you need a UI-based test execution), ensure y
 
 First, clone this repository to your local machine:
 
-```bash
+
 git clone https://github.com/JanisKatinskis/Ubiquiti-e2e.git
 cd Ubiquiti-e2e
+
+### Install Dependencies
+
+Run the following command to install all necessary project dependencies:
+npm install
