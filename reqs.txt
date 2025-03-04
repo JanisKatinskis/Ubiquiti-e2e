@@ -1,0 +1,15 @@
+Login flow
+● The locked_out_user should not be able to log in.
+● The standard_user should be able to log in.
+Purchase product flow
+● Sort on: Price (low to high)
+● Add the last product to the cart.
+● Sort on: Name (A to Z).
+● Add the top-right product to the cart.
+● Proceed to checkout.
+● Fill out customer details.
+● Verify that the items to purchase match the ones put in the cart.
+● Verify that the purchase was successful.
+Bonus
+● Add additional tests that would be useful for a smoke test.
+● Add a readme file in the project's root that explains the tests and how to run them.
