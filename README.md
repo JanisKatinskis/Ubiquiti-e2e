@@ -46,7 +46,7 @@ The tests are organized in two test suites:
 
 Test suite can be run using:
 ```
-npx wdio wdio.conf.js --suite smoketest_full  
+npx wdio wdio.conf.ts --suite smoketest_full  
 ```
 
 ### Run Specific Tests
@@ -54,7 +54,7 @@ npx wdio wdio.conf.js --suite smoketest_full
 You can target specific test files using:
 
 ```
-npx wdio wdio.conf.js --spec loginCorrectCredentials.e2e.ts
+npx wdio wdio.conf.ts --spec loginCorrectCredentials.e2e.ts
 ```
 
 ----------
