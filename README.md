@@ -54,5 +54,5 @@ npx wdio wdio.conf.js --suite smoketest_full
 You can target specific test files using:
 
 ```
-npx wdio run wdio.conf.js --spec ./test/specs/example.spec.js
+npx wdio wdio.conf.js --spec ./test/specs/login/loginCorrectCredentials.e2e.ts
 ```
