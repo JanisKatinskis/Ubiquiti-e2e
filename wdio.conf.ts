@@ -7,10 +7,15 @@ export const config: WebdriverIO.Config = {
     runner: 'local',
     tsConfigPath: './tsconfig.json',
     suites: {
-        smoketest: [
-            './test/specs/login/*.ts',
-            './test/specs/store/*.ts',
+        smoketest_main: [
+            './test/specs/login/loginLockedOut.e2e.ts',
+            './test/specs/login/loginSuccess.e2e.ts',
+            './test/specs/store/purchaseProducts.e2e.ts'
         ],
+        smoketest_full: [
+            './test/specs/login/*.ts',
+            './test/specs/store/*.ts'
+        ]
     },
     //
     // ==================

@@ -21,8 +21,8 @@ describe('Product purchase', () => {
         await expect(productsPage.lastProductTitle).toBeDisplayed()
         await expect(productsPage.btnAddToCartLastProduct).toBeClickable()
 
-        const firstProductName = (await productsPage.lastProductTitle.getText()).toString();
-        await productsPage.btnAddToCartLastProduct.click();
+        const firstProductName = (await productsPage.lastProductTitle.getText()).toString()
+        await productsPage.btnAddToCartLastProduct.click()
         await expect(productsPage.badgeShoppingCartProductCount).toBeDisplayed()
         await expect(productsPage.badgeShoppingCartProductCount).toHaveText("1")
 
@@ -31,12 +31,12 @@ describe('Product purchase', () => {
         await expect(productsPage.topRightProductTitle).toBeDisplayed()
         await expect(productsPage.btnAddToCartTopRightProduct).toBeClickable()
 
-        const secondProductName = (await productsPage.topRightProductTitle.getText()).toString();
-        await productsPage.btnAddToCartTopRightProduct.click();
+        const secondProductName = (await productsPage.topRightProductTitle.getText()).toString()
+        await productsPage.btnAddToCartTopRightProduct.click()
         await expect(productsPage.badgeShoppingCartProductCount).toHaveText("2")
 
         await expect(productsPage.btnShoppingCart).toBeClickable()
-        await productsPage.btnShoppingCart.click();
+        await productsPage.btnShoppingCart.click()
 
         await expect(cartPage.cartProductList).toBeDisplayed()
         await expect(cartPage.cartProductList).toHaveText(expect.stringContaining(firstProductName))
@@ -44,7 +44,7 @@ describe('Product purchase', () => {
 
 
         await expect(cartPage.btnCheckout).toBeClickable()
-        await cartPage.btnCheckout.click();
+        await cartPage.btnCheckout.click()
 
         await checkoutPage.checkoutForm.waitForDisplayed()
         await expect(checkoutPage.inputCheckoutFirstName).toBeDisplayed()
