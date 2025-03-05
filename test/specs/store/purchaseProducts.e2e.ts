@@ -42,7 +42,6 @@ describe('Product purchase', () => {
         await expect(cartPage.cartProductList).toHaveText(expect.stringContaining(firstProductName))
         await expect(cartPage.cartProductList).toHaveText(expect.stringContaining(secondProductName))
 
-
         await expect(cartPage.btnCheckout).toBeClickable()
         await cartPage.btnCheckout.click()
 
