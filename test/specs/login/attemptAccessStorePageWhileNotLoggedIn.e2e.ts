@@ -1,5 +1,5 @@
 import { expect } from '@wdio/globals'
-import loginPage from '../../pageobjects/login.page.js'
+import loginPage from '../../pageobjects/login.page.ts'
 
 describe('Attempt access store page while not logged in', () => {
     it('should return the correct error message when trying to access store page with direct URL while not logged in', async () => {

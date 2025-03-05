@@ -1,8 +1,8 @@
 import { expect } from '@wdio/globals'
-import loginPage from '../../pageobjects/login.page.js'
-import productsPage from '../../pageobjects/products.page.js'
-import cartPage from '../../pageobjects/cart.page.js'
-import checkoutPage from '../../pageobjects/checkout.page.js'
+import loginPage from '../../pageobjects/login.page.ts'
+import productsPage from '../../pageobjects/products.page.ts'
+import cartPage from '../../pageobjects/cart.page.ts'
+import checkoutPage from '../../pageobjects/checkout.page.ts'
 
 describe('Product purchase', () => {
     it('should login successfully with the correct credentials', async () => {

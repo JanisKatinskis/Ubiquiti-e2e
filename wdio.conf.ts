@@ -13,8 +13,8 @@ export const config: WebdriverIO.Config = {
             './test/specs/store/purchaseProducts.e2e.ts'
         ],
         smoketest_full: [
-            './test/specs/login/*.ts',
-            './test/specs/store/*.ts'
+            './test/specs/login/*.e2e.ts',
+            './test/specs/store/*.e2e.ts'
         ]
     },
     //

@@ -1,5 +1,5 @@
 import { expect } from '@wdio/globals'
-import loginPage from '../../pageobjects/login.page.js'
+import loginPage from '../../pageobjects/login.page.ts'
 
 describe('Login locked out', () => {
     it('should return the correct error message when logging in with locked out user credentials', async () => {

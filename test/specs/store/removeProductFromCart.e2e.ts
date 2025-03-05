@@ -1,7 +1,7 @@
 import { expect } from '@wdio/globals'
-import loginPage from '../../pageobjects/login.page.js'
-import productsPage from '../../pageobjects/products.page.js'
-import cartPage from '../../pageobjects/cart.page.js'
+import loginPage from '../../pageobjects/login.page.ts'
+import productsPage from '../../pageobjects/products.page.ts'
+import cartPage from '../../pageobjects/cart.page.ts'
 
 describe('Remove product from cart', () => {
     it('should successfully remove product from the cart', async () => {

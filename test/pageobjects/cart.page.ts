@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals'
-import Page from './page.js'
+import Page from './page.ts'
 
 class CartPage extends Page {
     public get cartProductList () { return $('[data-test="cart-list"]') }
