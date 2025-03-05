@@ -11,6 +11,8 @@ Before setting up the project, make sure you have the following installed:
 -   Node.js
     
 -   npm
+-   
+-   git
     
 
 ----------
