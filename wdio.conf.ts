@@ -9,7 +9,7 @@ export const config: WebdriverIO.Config = {
     suites: {
         smoketest_main: [
             './test/specs/login/loginLockedOut.e2e.ts',
-            './test/specs/login/loginSuccess.e2e.ts',
+            './test/specs/login/loginCorrectCredentials.e2e.ts',
             './test/specs/store/purchaseProducts.e2e.ts'
         ],
         smoketest_full: [
