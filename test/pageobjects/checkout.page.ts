@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals'
-import Page from './page.js';
+import Page from './page.js'
 
 class CheckoutPage extends Page {
     public get checkoutForm () { return $('#checkout_info_container') }
@@ -12,4 +12,4 @@ class CheckoutPage extends Page {
     public get checkoutCompleteContainer () { return $('#checkout_complete_container') }
 }
 
-export default new CheckoutPage();
+export default new CheckoutPage()

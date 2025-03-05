@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals'
-import Page from './page.ts';
+import Page from './page.ts'
 
 class LoginPage extends Page {
     public get loginForm () { return $('div.login-box') }
@@ -12,10 +12,10 @@ class LoginPage extends Page {
      * fills username and password, clicks "Login"
      */
     public async login (username: string, password: string) {
-        await this.inputUsername.setValue(username);
-        await this.inputPassword.setValue(password);
-        await this.btnLogin.click();
+        await this.inputUsername.setValue(username)
+        await this.inputPassword.setValue(password)
+        await this.btnLogin.click()
     }
 }
 
-export default new LoginPage();
+export default new LoginPage()

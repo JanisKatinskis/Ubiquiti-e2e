@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals'
-import Page from './page.js';
+import Page from './page.js'
 
 class ProductsPage extends Page {
     public get productsPageContent () { return $('[data-test="inventory-container"]') }
@@ -14,4 +14,4 @@ class ProductsPage extends Page {
     public get badgeShoppingCartProductCount () { return $('[data-test="shopping-cart-badge"]') }
 }
 
-export default new ProductsPage();
+export default new ProductsPage()
